@@ -26,6 +26,11 @@ export default class Translation extends React.Component {
     locales: PropTypes.locale,
     children: PropTypes.node.isRequired,
     exclude: PropTypes.array,
+    tagName: React.PropTypes.string,
+  }
+
+  static defaultProps = {
+    tagName: 'span',
   }
 
   static contextTypes = {
@@ -44,11 +49,7 @@ export default class Translation extends React.Component {
     const isExcluded = hasLocale(exclude, currentLocale);
     const isVisible = !isExcluded && hasLocale(translationLocales, currentLocale);
 
-    return (
-      <span {...this.props}>
-        { isVisible &&
-            this.props.children }
-      </span>
-    );
+    if (!isVisible) { return null; }
+    return React.createElement(this.props.tagName, this.props, this.props.children);
   }
 }

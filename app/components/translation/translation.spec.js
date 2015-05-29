@@ -53,8 +53,7 @@ describe('Translation Component', function() {
         </TranslationStub>
       );
 
-      var element = ReactTestUtils.findRenderedDOMComponentWithTag(result, 'span');
-      expect(element.getDOMNode().textContent).toEqual('');
+      expect(ReactTestUtils.isDOMComponent(result)).toBe(false);
     });
   });
 
@@ -71,8 +70,7 @@ describe('Translation Component', function() {
         </TranslationStub>
       );
 
-      var element = ReactTestUtils.findRenderedDOMComponentWithTag(result, 'span');
-      expect(element.getDOMNode().textContent).toEqual('');
+      expect(ReactTestUtils.isDOMComponent(result)).toBe(false);
     });
   });
 
@@ -109,8 +107,7 @@ describe('Translation Component', function() {
         </TranslationStub>
       );
 
-      var element = ReactTestUtils.findRenderedDOMComponentWithTag(result, 'span');
-      expect(element.getDOMNode().textContent).toEqual('');
+      expect(ReactTestUtils.isDOMComponent(result)).toBe(false);
     });
   });
 

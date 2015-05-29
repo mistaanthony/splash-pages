@@ -28,31 +28,25 @@ class Header extends React.Component {
 
     const products = (
       <ul className='u-text-xxs u-padding-Vxs'>
-        <LinkExists to='features'>
-          <li>
-            <Link to='features' id='track-nav-features' className='site-header__product-link u-link-clean'>
-              <span className='site-header__product-link-title u-text-semi'><Message pointer='features.nav_title' /></span>
-              <p className='u-color-p'><Message pointer='features.explainer' /></p>
-            </Link>
-          </li>
+        <LinkExists to='features' tagName='li'>
+          <Link to='features' id='track-nav-features' className='site-header__product-link u-link-clean'>
+            <span className='site-header__product-link-title u-text-semi'><Message pointer='features.nav_title' /></span>
+            <p className='u-color-p'><Message pointer='features.explainer' /></p>
+          </Link>
           <hr className='u-margin-Vxs' />
         </LinkExists>
-        <LinkExists to='pro'>
-          <li>
-            <Link to='pro' id='track-nav-pro' className='site-header__product-link u-link-clean'>
-              <span className='site-header__product-link-title u-text-semi'><Message pointer='pro.nav_title' /></span>
-              <p className='u-color-p'><Message pointer='pro.explainer' /></p>
-            </Link>
-          </li>
+        <LinkExists to='pro' tagName='li'>
+          <Link to='pro' id='track-nav-pro' className='site-header__product-link u-link-clean'>
+            <span className='site-header__product-link-title u-text-semi'><Message pointer='pro.nav_title' /></span>
+            <p className='u-color-p'><Message pointer='pro.explainer' /></p>
+          </Link>
         </LinkExists>
-        <LinkExists to='partners'>
+        <LinkExists to='partners' tagName='li'>
           <hr className='u-margin-Vxs' />
-          <li>
-            <Link to='partners' id='track-nav-partners' className='site-header__product-link u-link-clean'>
-              <span className='site-header__product-link-title u-text-semi'><Message pointer='partners.nav_title' /></span>
-              <p className='u-color-p'><Message pointer='partners.explainer' /></p>
-            </Link>
-          </li>
+          <Link to='partners' id='track-nav-partners' className='site-header__product-link u-link-clean'>
+            <span className='site-header__product-link-title u-text-semi'><Message pointer='partners.nav_title' /></span>
+            <p className='u-color-p'><Message pointer='partners.explainer' /></p>
+          </Link>
         </LinkExists>
       </ul>
     );

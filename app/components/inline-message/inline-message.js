@@ -45,6 +45,11 @@ export default class InlineMessage extends React.Component {
     children: PropTypes.string.isRequired,
     locale: PropTypes.string.isRequired,
     pointer: PropTypes.string.isRequired,
+    tagName: React.PropTypes.string,
+  }
+
+  static defaultProps = {
+    tagName: 'span',
   }
 
   static contextTypes = {
@@ -57,6 +62,6 @@ export default class InlineMessage extends React.Component {
     const { locale, children, pointer } = this.props;
     const message = getMessage({ currentLocale, locale, givenContent: children, pointer, messages });
 
-    return <span>{message}</span>;
+    return React.createElement(this.props.tagName, this.props, message);
   }
 }
