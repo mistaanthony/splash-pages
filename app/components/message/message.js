@@ -6,11 +6,6 @@ export default class Message extends React.Component {
 
   static propTypes = {
     pointer: React.PropTypes.string.isRequired,
-    tagName: React.PropTypes.string,
-  }
-
-  static defaultProps = {
-    tagName: 'span',
   }
 
   static contextTypes = {
@@ -19,6 +14,6 @@ export default class Message extends React.Component {
 
   render() {
     const child = getMessage(this.context.messages, this.props.pointer);
-    return React.createElement(this.props.tagName, this.props, child);
+    return (<span {...this.props}>{child}</span>);
   }
 }

@@ -3,7 +3,7 @@ import Link from '../link/link';
 import Href from '../href/href';
 import Message from '../message/message';
 import Translation from '../translation/translation';
-import LinkExists from '../link-exists/link-exists';
+import IfLinkExists from '../if-link-exists/if-link-exists';
 import Logo from '../../icons/logo/logo';
 import Popover from '../popover/popover';
 import classNames from 'classnames';
@@ -28,26 +28,26 @@ class Header extends React.Component {
 
     const products = (
       <ul className='u-text-xxs u-padding-Vxs'>
-        <LinkExists to='features' tagName='li'>
+        <IfLinkExists to='features' tagName='li'>
           <Link to='features' id='track-nav-features' className='site-header__product-link u-link-clean'>
             <span className='site-header__product-link-title u-text-semi'><Message pointer='features.nav_title' /></span>
             <p className='u-color-p'><Message pointer='features.explainer' /></p>
           </Link>
           <hr className='u-margin-Vxs' />
-        </LinkExists>
-        <LinkExists to='pro' tagName='li'>
+        </IfLinkExists>
+        <IfLinkExists to='pro' tagName='li'>
           <Link to='pro' id='track-nav-pro' className='site-header__product-link u-link-clean'>
             <span className='site-header__product-link-title u-text-semi'><Message pointer='pro.nav_title' /></span>
             <p className='u-color-p'><Message pointer='pro.explainer' /></p>
           </Link>
-        </LinkExists>
-        <LinkExists to='partners' tagName='li'>
+        </IfLinkExists>
+        <IfLinkExists to='partners' tagName='li'>
           <hr className='u-margin-Vxs' />
           <Link to='partners' id='track-nav-partners' className='site-header__product-link u-link-clean'>
             <span className='site-header__product-link-title u-text-semi'><Message pointer='partners.nav_title' /></span>
             <p className='u-color-p'><Message pointer='partners.explainer' /></p>
           </Link>
-        </LinkExists>
+        </IfLinkExists>
       </ul>
     );
 
@@ -78,22 +78,22 @@ class Header extends React.Component {
                  </Popover>
               </div>
               <div className='nav__item u-relative'>
-                <LinkExists to='pricing'>
+                <IfLinkExists to='pricing'>
                   <Link to='pricing' id='track-nav-pricing' className={linkClass}>
                     <div className='nav__item-link'>
                       <Message pointer='pricing.nav_title' />
                     </div>
                   </Link>
-                </LinkExists>
+                </IfLinkExists>
               </div>
               <div className='nav__item u-relative'>
-                <LinkExists to='stories'>
+                <IfLinkExists to='stories'>
                   <Link to='stories' id='track-nav-stories' className={linkClass}>
                     <div className='nav__item-link'>
                       <Message pointer='stories.nav_title' />
                     </div>
                   </Link>
-                </LinkExists>
+                </IfLinkExists>
               </div>
               <div className='nav__item u-relative'>
                 <Popover toggle={
@@ -107,10 +107,10 @@ class Header extends React.Component {
                 }>
                   <ul className='u-text-xxs u-padding-Vxs'>
                     <li className='u-text-semi'>
-                     <LinkExists to='security'>
+                     <IfLinkExists to='security'>
                        <Link to='security' id='track-nav-security' className='u-padding-Vxs u-padding-Hm u-block'
                          pointer='security.nav_title' />
-                     </LinkExists>
+                     </IfLinkExists>
                     </li>
                     <li className='u-text-semi'>
                       <Href to='guides.path' id='track-nav-guides' className='u-padding-Vxs u-padding-Hm u-block'
@@ -124,23 +124,23 @@ class Header extends React.Component {
                       </li>
                     </Translation>
                     <li className='u-text-semi'>
-                     <LinkExists to='faq_merchants'>
+                     <IfLinkExists to='faq_merchants'>
                        <Link to='faq_merchants' pointer='faq_merchants.link_title'
                          id='track-nav-faq' className='u-padding-Vxs u-padding-Hm u-block' />
-                     </LinkExists>
+                     </IfLinkExists>
                     </li>
                     <hr className='u-margin-Vs' />
                     <li>
-                      <LinkExists to='about'>
+                      <IfLinkExists to='about'>
                         <Link to='about' pointer='about.nav_title'
                           id='track-nav-about' className='u-padding-Vxs u-padding-Hm u-block' />
-                      </LinkExists>
+                      </IfLinkExists>
                     </li>
                     <li>
-                      <LinkExists to='jobs'>
+                      <IfLinkExists to='jobs'>
                         <Link to='jobs' pointer='jobs.nav_title'
                           id='track-nav-jobs' className='u-padding-Vxs u-padding-Hm u-block' />
-                      </LinkExists>
+                      </IfLinkExists>
                     </li>
                   </ul>
                 </Popover>

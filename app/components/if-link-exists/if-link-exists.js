@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route } from 'react-router';
 
-class LinkExists extends React.Component {
-  displayName = 'LinkExists'
+export default class IfLinkExists extends React.Component {
+  displayName = 'IfLinkExists'
 
   static contextTypes = {
     router: React.PropTypes.func.isRequired,
@@ -33,5 +33,3 @@ class LinkExists extends React.Component {
     return React.createElement(this.props.tagName, this.props, this.props.children);
   }
 }
-
-export default LinkExists;
