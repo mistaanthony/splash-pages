@@ -15,7 +15,8 @@
     "by": true,
     "element": true,
     "jasmine": true,
-    "afterEach": true
+    "afterEach": true,
+    "spyOn": true,
   },
   "plugins": [
     "react"

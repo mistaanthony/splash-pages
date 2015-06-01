@@ -5,7 +5,7 @@ import findLast from 'lodash/collection/findLast';
 import assign from 'lodash/object/assign';
 import React from 'react';
 import Router from 'react-router';
-import { getRoutes } from '../router/route-helpers';
+import { getRoutes, getLocalesForRouteName } from '../router/route-helpers';
 import { pushDataLayer } from '../helpers/gtm-tracker/gtm-tracker';
 import { isHostBlacklisted } from '../../config/blacklisted-origins';
 
@@ -37,9 +37,11 @@ function renderApp() {
   router.run(function(Handler, state) {
     const mountNode = document.getElementById('root');
     const routeName = result(findLast(state.routes.slice(), 'name'), 'name');
+    const routeLocales = Object.keys(getLocalesForRouteName(routeName, appState.availableLocales) || {});
     const stateProps = assign({}, appState, {
       routeName: routeName || 'not_found',
       pathname: state.pathname,
+      routeLocales: routeLocales,
     });
 
     React.render(<Handler {...stateProps} />, mountNode, () => {
