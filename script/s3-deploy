@@ -186,8 +186,15 @@ function writeRedirectFiles(targetRedirects) {
   Object.keys(targetRedirects).forEach(function(redirectFrom) {
     var outdir = path.join(process.cwd(), argv.cwd);
     var outfile = path.join(outdir, redirectFrom);
+    var target = targetRedirects[redirectFrom];
     mkdirp.sync(path.dirname(outfile));
-    fs.writeFileSync(outfile, '<!doctype html><meta charset="utf-8"></html>');
+    fs.writeFileSync(outfile,
+      '<!doctype html>' +
+      '<html>' +
+      '<meta charset="utf-8">' +
+      '<meta http-equiv="refresh" content="0;url=' + target + '">' +
+      '</html>'
+    );
   });
 }
 
