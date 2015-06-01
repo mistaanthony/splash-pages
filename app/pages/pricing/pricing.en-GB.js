@@ -139,8 +139,8 @@ export default class PricingEnGb extends React.Component {
         <div className='site-container u-text-center u-padding-Tm u-padding-Bxxl'>
           <div className='u-padding-Vxl'>
             <h2 className='u-text-heading u-text-l u-color-heading u-text-light'>Got any questions?</h2>
-            <p className='u-color-p u-margin-Ts'>Speak with one of our payments experts on <Message pointer='phone_full' /></p>
-            <Translation locales={['en']} exclude="en-GB">
+            <p className='u-color-p u-margin-Ts'>Speak with one of our payments experts on <Message pointer='phone_local' /></p>
+            <Translation locales={['en']} exclude={['en-GB']}>
               <Link to='contact_sales' query={{ s: 'pricing' }} className='btn btn--hollow u-margin-Tm'>Contact sales</Link>
             </Translation>
             <Translation locales='en-GB'>
