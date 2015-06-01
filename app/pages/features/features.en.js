@@ -371,7 +371,7 @@ export default class FeaturesEn extends React.Component {
                     <PhoneIcon className='svg-icon__image u-fill-dark-gray' />
                   </figure>
                   <h2 className='u-text-heading u-color-heading u-text-l u-text-light u-margin-Tm'>
-                    <Message pointer="phone_full" />
+                    <Message pointer="phone_local" />
                   </h2>
                   <div className='u-center'>
                     <p className='u-text-s u-color-p u-margin-Ts'>

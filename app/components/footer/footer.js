@@ -163,7 +163,9 @@ class Footer extends React.Component {
                     <Message pointer='postal_address.address_country' />
                   </SchemaItemProp>.
                 </SchemaItemProp><br />
-                <SchemaItemProp itemProp='telephone' pointer='phone_full' />,&nbsp;
+                <SchemaItemProp itemProp='telephone' pointer='phone_full'>
+                  <Message pointer='phone_local' />
+                </SchemaItemProp>,&nbsp;
                 <Href to='email' className='u-link-invert' itemProp='email' />
               </p>
               <p className='u-text-heading u-text-xxs u-color-invert u-margin-Bm'>

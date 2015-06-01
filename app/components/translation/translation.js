@@ -9,12 +9,12 @@ function hasLocale(allowedLocales, currentLocale) {
   return any(allowedLocales, (locale) => currentLocale === locale);
 }
 
-function validateLocale(translationLocales, routeLocales, routeName) {
+function validateLocale(translationLocales, locales, routeLocales, routeName) {
   const localesAllowed = any(translationLocales, partial(hasLocale, routeLocales));
 
   if (!localesAllowed) {
-    throw new Error(
-      `Translation locales not allowed (${translationLocales}), allowed: (${routeLocales}), route: ${routeName}`
+    console.warn(
+      `Translation locales never rendered (${translationLocales}), defined: (${locales}), possible: (${routeLocales}), route: ${routeName}`
     );
   }
 }
@@ -39,7 +39,7 @@ export default class Translation extends React.Component {
     const exclude = flatten([this.props.exclude]);
     const { currentLocale, routeLocales, routeName } = this.context;
     const translationLocales = expandLangLocales(locales, routeLocales);
-    validateLocale(translationLocales, routeLocales, routeName);
+    validateLocale(translationLocales, locales, routeLocales, routeName);
 
     const isExcluded = hasLocale(exclude, currentLocale);
     const isVisible = !isExcluded && hasLocale(translationLocales, currentLocale);

@@ -83,13 +83,16 @@ describe('Translation Component', function() {
         context: { currentLocale: 'en-GB', routeLocales: ['fr-FR'], routeName: 'test' },
       });
 
-      expect(function() {
-        return ReactTestUtils.renderIntoDocument(
-          <TranslationStub>
-            <p>hello world</p>
-          </TranslationStub>
-        );
-      }).toThrow(new Error('Translation locales not allowed (en-GB), allowed: (fr-FR), route: test'));
+      spyOn(console, 'warn');
+
+      ReactTestUtils.renderIntoDocument(
+        <TranslationStub>
+          <p>hello world</p>
+        </TranslationStub>
+      );
+
+      expect(console.warn)
+        .toHaveBeenCalledWith('Translation locales never rendered (en-GB), defined: (en-GB), possible: (fr-FR), route: test');
     });
   });
 

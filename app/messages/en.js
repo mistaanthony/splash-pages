@@ -38,7 +38,7 @@ export default {
     address_country_iso: 'GB',
   },
   phone_full: '+44 20 7183 8674',
-  phone_local: '020 7183 8674',
+  phone_local: '+44 20 7183 8674',
   email: 'help@gocardless.com',
   documentation_link: 'https://developer.gocardless.com/pro',
   prospect_form: {
