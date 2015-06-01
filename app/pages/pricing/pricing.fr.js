@@ -136,7 +136,7 @@ export default class PricingFr extends React.Component {
               </figure>
               <div className='u-center'>
                 <p className='u-color-p u-margin-Ts'>
-                  Nous sommes disponible afin de répondre à vos questions au <Message pointer='phone_full' />
+                  Nous sommes disponible afin de répondre à vos questions au <Message pointer='phone_local' />
                 </p>
                 <Link to='contact_sales' className='btn btn--hollow u-margin-Tm'>
                   Contactez-nous

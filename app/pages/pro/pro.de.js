@@ -195,7 +195,7 @@ export default class ProDe extends React.Component {
                     <PhoneIcon className='svg-icon__image u-fill-dark-gray' />
                   </figure>
                   <h2 className='u-text-heading u-color-heading u-text-l u-text-light u-margin-Tm'>
-                    <Message pointer='phone_full' />
+                    <Message pointer='phone_local' />
                   </h2>
                   <div className='u-center'>
                     <p className='u-text-s u-color-p u-margin-Ts'>
@@ -289,7 +289,7 @@ export default class ProDe extends React.Component {
                 <hr className='u-margin-Vxxl' />
                 <p className='u-color-p'>
                   <strong>Sie möchten mit jemandem sprechen?</strong><br />
-                  Rufen Sie unsere Experten an unter <Message pointer='phone_full' />.git <br />
+                  Rufen Sie unsere Experten an unter <Message pointer='phone_local' />.<br />
                   Wir sind zwischen 10.00 und 19.00 Uhr für Sie da, Montag bis Freitag.
                 </p>
               </div>

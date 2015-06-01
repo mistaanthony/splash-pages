@@ -2,6 +2,7 @@ import React from 'react';
 import Page from '../../components/page/page';
 import ProspectForm from '../../components/prospect-form/prospect-form';
 import Message from '../../components/message/message';
+import Translation from '../../components/translation/translation';
 
 export default class ContactSales extends React.Component {
   displayName = 'ContactSales'
@@ -25,8 +26,11 @@ export default class ContactSales extends React.Component {
             <ProspectForm prospectType='sales' />
             <hr />
             <p className='u-text-center u-color-meta u-margin-Bs'>
-              <b><Message pointer='contact_sales.talk_to_us' /></b><br/>
-              <Message pointer='contact_sales.call_us' /> <Message pointer='phone_full' />
+              <b><Message pointer='contact_sales.talk_to_us' /></b><br />
+              <Message pointer='contact_sales.call_us' /> <Message pointer='phone_local' />
+              <Translation locales='en-GB'>
+                <br />(<Message pointer='phone_full' /> from outside the UK)
+              </Translation>
             </p>
             <hr />
             <p className='u-text-center u-color-meta u-margin-Bs'>
