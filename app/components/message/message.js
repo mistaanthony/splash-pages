@@ -13,10 +13,7 @@ export default class Message extends React.Component {
   }
 
   render() {
-    return (
-      <span>
-        { getMessage(this.context.messages, this.props.pointer) }
-      </span>
-    );
+    const child = getMessage(this.context.messages, this.props.pointer);
+    return (<span {...this.props}>{child}</span>);
   }
 }

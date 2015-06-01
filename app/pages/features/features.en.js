@@ -14,7 +14,7 @@ import TickIcon from '../../icons/svg/tick';
 import MembershipIcon from '../../icons/svg/membership';
 import PhoneIcon from '../../icons/svg/phone';
 import Link from '../../components/link/link';
-import LinkExists from '../../components/link-exists/link-exists';
+import IfLinkExists from '../../components/if-link-exists/if-link-exists';
 import Translation from '../../components/translation/translation';
 
 export default class FeaturesEn extends React.Component {
@@ -303,12 +303,12 @@ export default class FeaturesEn extends React.Component {
                       they're always protected by the Direct Debit Guarantee.
                     </p>
                   </Translation>
-                  <LinkExists to='example_checkout'>
+                  <IfLinkExists to='example_checkout'>
                     <Link to='example_checkout'
                     className='u-color-primary u-text-upcase u-text-xxs u-text-heading u-text-semi u-block u-margin-Txl'>
                       See an example payment page
                     </Link>
-                  </LinkExists>
+                  </IfLinkExists>
                 </div>
                 <div className='grid__cell u-size-1of2 u-text-center'>
                   <img src='/images/features/payment-page--gyms.jpg' className='vertical-page__mobile-image' />

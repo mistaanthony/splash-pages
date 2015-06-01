@@ -4,7 +4,7 @@ import merge from 'lodash/object/merge';
 import Link from '../link/link';
 import Href from '../href/href';
 import Message from '../message/message';
-import LinkExists from '../link-exists/link-exists';
+import IfLinkExists from '../if-link-exists/if-link-exists';
 import Translation from '../translation/translation';
 import SchemaItemProp from '../schema-item-prop/schema-item-prop';
 import { homeRoute } from '../../router/routes';
@@ -50,36 +50,26 @@ class Footer extends React.Component {
           <div className='grid__cell u-size-1of2'>
             <ul className='grid u-text-heading u-text-semi'>
               <div className='grid__cell u-size-1of3 u-text-xxs'>
-                <LinkExists to='features'>
-                  <li>
-                    <Link to='features' pointer='features.nav_title'
-                      id='track-footer-features' className='page-footer__link u-link-invert' />
-                  </li>
-                </LinkExists>
-                <LinkExists to='pro'>
-                  <li>
-                    <Link to='pro' pointer='pro.nav_title'
-                      id='track-footer-pro' className='page-footer__link u-link-invert' />
-                  </li>
-                </LinkExists>
-                <LinkExists to='partners'>
-                  <li>
-                    <Link to='partners' pointer='partners.link_title'
-                      id='track-footer-partners' className='page-footer__link u-link-invert' />
-                  </li>
-                </LinkExists>
-                <LinkExists to='pricing'>
-                  <li>
-                    <Link to='pricing' pointer='pricing.nav_title'
-                      id='track-footer-pricing' className='page-footer__link u-link-invert' />
-                  </li>
-                </LinkExists>
-                <LinkExists to='stories'>
-                  <li>
-                    <Link to='stories' pointer='stories.title'
-                      id='track-footer-stories' className='page-footer__link u-link-invert' />
-                  </li>
-                </LinkExists>
+                <IfLinkExists to='features' tagName='li'>
+                  <Link to='features' pointer='features.nav_title'
+                    id='track-footer-features' className='page-footer__link u-link-invert' />
+                </IfLinkExists>
+                <IfLinkExists to='pro' tagName='li'>
+                  <Link to='pro' pointer='pro.nav_title'
+                    id='track-footer-pro' className='page-footer__link u-link-invert' />
+                </IfLinkExists>
+                <IfLinkExists to='partners' tagName='li'>
+                  <Link to='partners' pointer='partners.link_title'
+                    id='track-footer-partners' className='page-footer__link u-link-invert' />
+                </IfLinkExists>
+                <IfLinkExists to='pricing' tagName='li'>
+                  <Link to='pricing' pointer='pricing.nav_title'
+                    id='track-footer-pricing' className='page-footer__link u-link-invert' />
+                </IfLinkExists>
+                <IfLinkExists to='stories' tagName='li'>
+                  <Link to='stories' pointer='stories.title'
+                    id='track-footer-stories' className='page-footer__link u-link-invert' />
+                </IfLinkExists>
                 <li>
                   <Href to='guides.path' id='track-footer-guides' className='u-link-invert' pointer='guides.nav_title' />
                 </li>
@@ -92,61 +82,47 @@ class Footer extends React.Component {
                     </a>
                   </li>
                 </Translation>
-                <LinkExists to='faq_merchants'>
-                  <li>
-                    <Link to='faq_merchants' pointer='faq_merchants.link_title'
-                      id='track-footer-faq' className='u-link-clean u-link-invert' />
-                  </li>
-                </LinkExists>
-                <LinkExists to='features_api'>
-                  <li>
-                    <Link to='features_api' pointer='features_api.nav_title'
-                      id='track-footer-api' className='page-footer__link u-link-invert' />
-                  </li>
-                </LinkExists>
+                <IfLinkExists to='faq_merchants' tagName='li'>
+                  <Link to='faq_merchants' pointer='faq_merchants.link_title'
+                    id='track-footer-faq' className='u-link-clean u-link-invert' />
+                </IfLinkExists>
+                <IfLinkExists to='features_api' tagName='li'>
+                  <Link to='features_api' pointer='features_api.nav_title'
+                    id='track-footer-api' className='page-footer__link u-link-invert' />
+                </IfLinkExists>
                 <li>
                   <a href='https://developer.gocardless.com/pro' id='track-footer-pro-api' className='u-link-invert'>
                     <Message pointer='pro_docs.nav_title' />
                   </a>
                 </li>
-                <LinkExists to='security'>
-                  <li>
-                    <Link to='security' pointer='security.nav_title'
-                      id='track-footer-security' className='page-footer__link u-link-invert' />
-                  </li>
-                </LinkExists>
+                <IfLinkExists to='security' tagName='li'>
+                  <Link to='security' pointer='security.nav_title'
+                    id='track-footer-security' className='page-footer__link u-link-invert' />
+                </IfLinkExists>
               </div>
               <div className='grid__cell u-size-1of3 u-text-xxs'>
-                <LinkExists to='europe'>
-                  <li>
-                    <Link to='europe' pointer='europe.nav_title'
-                      id='track-footer-europe' className='page-footer__link u-link-invert' />
-                  </li>
-                </LinkExists>
-                <LinkExists to='legal'>
-                  <li>
-                    { /** We special case legal's footer link text, since it appears in the legal page's nav with another name  */ }
-                    <Link to='legal' pointer='legal.footer_nav_title'
-                      id='track-footer-legal' className='page-footer__link u-link-invert' />
-                  </li>
-                </LinkExists>
+                <IfLinkExists to='europe' tagName='li'>
+                  <Link to='europe' pointer='europe.nav_title'
+                    id='track-footer-europe' className='page-footer__link u-link-invert' />
+                </IfLinkExists>
+                <IfLinkExists to='legal' tagName='li'>
+                  { /** We special case legal's footer link text, since it appears in the legal page's nav with another name  */ }
+                  <Link to='legal' pointer='legal.footer_nav_title'
+                    id='track-footer-legal' className='page-footer__link u-link-invert' />
+                </IfLinkExists>
                 <li>
                   <a href='https://blog.gocardless.com' id='track-footer-blog' className='u-link-invert'>
                     <Message pointer='blog.nav_title' />
                   </a>
                 </li>
-                <LinkExists to='about'>
-                  <li>
-                    <Link to='about' pointer='about.nav_title'
-                      id='track-footer-about' className='page-footer__link u-link-invert' />
-                  </li>
-                </LinkExists>
-                <LinkExists to='jobs'>
-                  <li>
-                    <Link to='jobs' pointer='jobs.nav_title'
-                      id='track-footer-jobs' className='page-footer__link u-link-invert' />
-                  </li>
-                </LinkExists>
+                <IfLinkExists to='about' tagName='li'>
+                  <Link to='about' pointer='about.nav_title'
+                    id='track-footer-about' className='page-footer__link u-link-invert' />
+                </IfLinkExists>
+                <IfLinkExists to='jobs' tagName='li'>
+                  <Link to='jobs' pointer='jobs.nav_title'
+                    id='track-footer-jobs' className='page-footer__link u-link-invert' />
+                </IfLinkExists>
               </div>
             </ul>
           </div>
@@ -171,12 +147,12 @@ class Footer extends React.Component {
               <p className='u-text-heading u-text-xxs u-color-invert u-margin-Bm'>
                 <Message pointer='footer.description' />
               </p>
-              <LinkExists to='legal_privacy'>
+              <IfLinkExists to='legal_privacy'>
                 <p className='u-text-heading u-text-xxs u-color-invert'>
                   <Message pointer='footer.cookies_message' />&nbsp;
                   <Link to='legal_privacy' className='u-link-clean u-link-invert u-text-heavy' pointer='footer.cookies_link_text' />.
                 </p>
-              </LinkExists>
+              </IfLinkExists>
             </div>
           </div>
         </div>
@@ -221,14 +197,14 @@ class Footer extends React.Component {
                     })
                   }
 
-                  <LinkExists to='europe'>
+                  <IfLinkExists to='europe'>
                     <hr className='u-margin-Vs' />
                     <div className='u-padding-Vxs u-padding-Hm'>
                       <p className='u-color-p'><Message pointer='footer.europe_cta' />,&nbsp;</p>
                       <p className='u-color-p'><Link to='europe'><Message pointer='footer.europe_link' /></Link>&nbsp;
                         <Message pointer='footer.europe_description' /></p>
                     </div>
-                  </LinkExists>
+                  </IfLinkExists>
                 </ul>
               </Popover>
             </span>

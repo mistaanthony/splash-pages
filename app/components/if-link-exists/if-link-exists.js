@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route } from 'react-router';
 
-class LinkExists extends React.Component {
-  displayName = 'LinkExists'
+export default class IfLinkExists extends React.Component {
+  displayName = 'IfLinkExists'
 
   static contextTypes = {
     router: React.PropTypes.func.isRequired,
@@ -13,6 +13,11 @@ class LinkExists extends React.Component {
     to: React.PropTypes.oneOfType([ React.PropTypes.string, React.PropTypes.instanceOf(Route)]).isRequired,
     params: React.PropTypes.object,
     query: React.PropTypes.object,
+    tagName: React.PropTypes.string,
+  }
+
+  static defaultProps = {
+    tagName: 'span',
   }
 
   render() {
@@ -25,11 +30,6 @@ class LinkExists extends React.Component {
     }
 
     if (!hasLink) { return null; }
-
-    return (
-      <span>{ this.props.children }</span>
-    );
+    return React.createElement(this.props.tagName, this.props, this.props.children);
   }
 }
-
-export default LinkExists;
