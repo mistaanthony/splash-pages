@@ -18,8 +18,8 @@ export default class GlobalExpansionLead extends React.Component {
           corporations like TripAdvisor, The Guardian and Box.
         </p>
         <p className='para'>
-          We've gained great traction in the UK, we're quickly expanding in Europe,
-          and now we want to make make recurring payments simpler even further
+          We've gained great traction in the UK, quickly expanding in Europe,
+          and now we want to make recurring payments simpler even further
           afield. The opportunity is there, but we need to move fast to become
           a global success. We're looking for results-oriented, adaptable
           self-starters to lead this expansion.
@@ -27,8 +27,10 @@ export default class GlobalExpansionLead extends React.Component {
         <h4 className='u-text-s u-margin-Bxs u-margin-Tm'>The role</h4>
         <p className='para'> You will be responsible for helping to prioritise
         which countries GoCardless enters next. You will plan &amp; execute the
-        setup in each country &ndash; juggling a number of geographies at a time.
-        Recent examples include Sweden, Australia and the USA.
+        setup in each country &ndash; juggling a number of geographies at a
+        time. After operationally setting this up, you'll hand over to a
+        Country Lead who will launch commercially. Recent examples include
+        Sweden, Australia and the USA.
         </p>
         <p className='para'>
           You’ll be responsible for:
