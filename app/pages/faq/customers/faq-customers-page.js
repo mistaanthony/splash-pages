@@ -3,7 +3,7 @@ import { filterRouteByCategory } from '../../../router/route-helpers';
 import Page from '../../../components/page/page';
 import Message from '../../../components/message/message';
 import Link from '../../../components/link/link';
-import LinkExists from '../../../components/link-exists/link-exists';
+import IfLinkExists from '../../../components/if-link-exists/if-link-exists';
 import FaqHeader from '../faq-header';
 import FaqSidebar from '../faq-sidebar';
 import { PropTypes } from '../../../helpers/prop-types/prop-types';
@@ -35,14 +35,14 @@ export default class FaqCustomersPage extends React.Component {
     return (
       <Page isInverted={false}>
         <FaqHeader>
-          <LinkExists to='faq_customers'>
+          <IfLinkExists to='faq_customers'>
             <p className='u-text-heading-light u-text-m u-color-invert u-padding-Vs'>
               Taking payments?&nbsp;
               <Link to='faq_merchants' className='u-text-underline u-link-invert'>
                 Read our FAQ for merchants
               </Link>
             </p>
-          </LinkExists>
+          </IfLinkExists>
         </FaqHeader>
 
         <div className='site-container u-padding-Vxxl grid'>

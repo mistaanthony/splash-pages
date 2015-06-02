@@ -2,7 +2,7 @@ import React from 'react';
 import Translation from '../../components/translation/translation';
 import Message from '../../components/message/message';
 import Link from '../../components/link/link';
-import LinkExists from '../../components/link-exists/link-exists';
+import IfLinkExists from '../../components/if-link-exists/if-link-exists';
 
 export default class PricingEnGb extends React.Component {
   displayName = 'PricingEnGb'
@@ -37,11 +37,11 @@ export default class PricingEnGb extends React.Component {
                   <li className='pricing-options__list-item'>
                     Scale pricing available (<a href='#scale-pricing-container'>?</a>)
                   </li>
-                  <LinkExists to='features'>
+                  <IfLinkExists to='features'>
                     <li className='pricing-options__list-item'>
                       <Link to='features'>Find out more about GoCardless</Link>
                     </li>
-                  </LinkExists>
+                  </IfLinkExists>
                   <Translation locales={['en']} exclude={['en-GB']}>
                     <li className='pricing-options__list-button'>
                       <Link to='contact_sales' query={{ s: 'pricing' }} className='btn u-size-full'>Contact sales</Link>
