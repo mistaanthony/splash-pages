@@ -43,7 +43,8 @@ export default class DeveloperCommunityManager extends React.Component {
           You'll plan our strategy, organise and host events, manage a budget, keep up
           to date with calls for conference proposals, ensure we follow-through on our
           commitments and ideas, and make sure we focus on getting the most out of
-          everything we do.
+          everything we do. You'll play a large part in building our engineering
+          brand and will have a strong presence on social media.
         </p>
         <p className='para'>
           Everyone on the engineering team has a conference budget, and by being aware
