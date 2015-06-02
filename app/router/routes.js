@@ -337,6 +337,9 @@ export const config = Immutable.fromJS([
       en: {
         path: '/legal/merchants',
       },
+       fr: {
+        path: '/legal/marchands',
+      },
     },
   ],
   [LegalOldRestrictionsIndex, { name: 'legal_old_restrictions' }, {
