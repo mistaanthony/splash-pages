@@ -22,7 +22,7 @@ export default class LegalMerchantsFr extends React.Component {
         </p>
         <p className='para'>
           Tout contrat pour la livraison de biens ou de services effectué entre vous et
-          vos clients ne sont pas affecté par ce Contrat. GoCardless n'est pas
+          vos clients n'est pas affecté par ce Contrat. GoCardless n'est pas
           une partie prenante dans la livraison effective de biens ou de services
           à vos clients et toutes disputes commerciales doivent être résolues
           directement entre vous et vos clients. S'il existe des problèmes avec
