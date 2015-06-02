@@ -252,11 +252,37 @@ Static app: `app/public/`
 
 ### Troubleshooting
 
-1. `npm start` fails  
+1. `npm start` fails
     Try running `npm install`. Packages might be out of date.
 
-2. Changes are not happening  
+2. Changes are not happening
    There might be an exception in your code, check the running terminal or your chrome inspector console.
 
-3. Prospect forms are broken  
+3. Prospect forms are broken
    You need to run the gocardless app at: `gocardless.dev:3000`
+
+## Adding a job ad
+
+1. Add content (e.g. `app/pages/jobs/positions/hiring-assistant.js`)
+
+2. Import and add file to routes (`app/router/routes.js`)
+
+```js
+import HiringAssistant from '../pages/about/jobs/positions/hiring-assistant';
+
+[HiringAssistant, { name: 'jobs_hiring_assistant', category: 'jobs.operations' }, {
+    en: {
+      path: '/about/jobs/hiring-assistant',
+    },
+  },
+],
+```
+
+3. Add title/description to messages (e.g. `app/messages/en.js`)
+
+```js
+jobs_hiring_assistant: {
+  title: 'Hiring Assistant',
+  description: '',
+},
+```

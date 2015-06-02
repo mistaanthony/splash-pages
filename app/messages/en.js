@@ -381,6 +381,10 @@ export default {
     title: 'Office Manager',
     description: '',
   },
+  jobs_hiring_assistant: {
+    title: 'Hiring Assistant',
+    description: '',
+  },
   jobs_customer_support_france: {
     title: 'French Customer Support',
     description: '',

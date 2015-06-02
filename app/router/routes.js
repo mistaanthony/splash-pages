@@ -33,6 +33,7 @@ import CountryLeadSweden from '../pages/about/jobs/positions/country-lead-se';
 import Designers from '../pages/about/jobs/positions/designers';
 import SoftwareEngineer from '../pages/about/jobs/positions/software-engineer';
 import WebOperationsEngineer from '../pages/about/jobs/positions/web-operations-engineer';
+import HiringAssistant from '../pages/about/jobs/positions/hiring-assistant';
 
 import LegalIntroduction from '../pages/legal/introduction/legal-introduction';
 import LegalCustomers from '../pages/legal/customers/legal-customers';
@@ -303,6 +304,12 @@ export const config = Immutable.fromJS([
   [OfficeManager, { name: 'jobs_office_manager', category: 'jobs.operations' }, {
       en: {
         path: '/about/jobs/office-manager',
+      },
+    },
+  ],
+  [HiringAssistant, { name: 'jobs_hiring_assistant', category: 'jobs.operations' }, {
+      en: {
+        path: '/about/jobs/hiring-assistant',
       },
     },
   ],
