@@ -1,13 +1,13 @@
 import React from 'react';
 import JobsPage from '../jobs-page';
 
-export default class HiringAssistant extends React.Component {
-  displayName = 'HiringAssistant'
+export default class HiringCoordinator extends React.Component {
+  displayName = 'HiringCoordinator'
 
   render() {
     return (
       <JobsPage>
-        <h3 className='u-text-heading-light u-text-m u-color-heading'>Hiring Assistant</h3>
+        <h3 className='u-text-heading-light u-text-m u-color-heading'>Hiring Coordinator</h3>
         <p className='para'>
           Manage our hiring process and help keep GoCardless one of the best
           places to work in London.
@@ -15,11 +15,11 @@ export default class HiringAssistant extends React.Component {
         <p className='para'>
           GoCardless is growing fast. We're building the next generation of
           online payments and already provide simple Direct Debit to thousands
-           of small and medium sized businesses in the UK and beyond. We care
-           as much about building a great company as we do about building our
-           business, and that means hiring talented people, giving them
-           exciting challenges to tackle, and providing a great working
-           environment.
+          of small and medium sized businesses in the UK and beyond. We care
+          as much about building a great company as we do about building our
+          business, and that means hiring talented people, giving them
+          exciting challenges to tackle, and providing a great working
+          environment.
         </p>
         <p className='para'>
           We’re a small, talented team who enjoy spending time together and
@@ -28,7 +28,7 @@ export default class HiringAssistant extends React.Component {
           continue this growth. This year we’ll be hiring for both our core
           team in London and starting to hire for our European teams as we
           launch in Europe and beyond. We’re looking for an enthusiastic,
-          organised hiring assistant to be the first point of contact for
+          organised hiring coordinator to be the first point of contact for
           everyone who wants to join GoCardless.
         </p>
         <h4 className='u-text-s u-margin-Bxs u-margin-Tm'>The role</h4>
@@ -56,10 +56,6 @@ export default class HiringAssistant extends React.Component {
             their questions and keeping them keen and relaxed through the process
           </li>
           <li>
-            arranging repairs and maintenance, working with external suppliers,
-            managing our relationships with our landlord and subtenants
-          </li>
-          <li>
             running the onboarding process for new candidates: from writing
             contracts and taking references, to ordering their equipment
           </li>
@@ -77,23 +73,22 @@ export default class HiringAssistant extends React.Component {
         <p className='para'>
           We are looking for someone incredibly organised and friendly to manage
           our hiring process. You will be managing all interactions with
-          applicants, from CV screening to scheduling interviews.
+          applicants, from CV screening to scheduling interviews and running
+          first week logistics for new joiners.
         </p>
-        <ul className='list u-margin-Tm'>
-          <li>
-            You’re incredibly well organised. You’re used to taking
-            responsibility for scheduling and logistics and you can prioritise
-            tasks effortlessly.
-          </li>
-          <li>
-            You are process oriented. You’re obsessively detail-attentive,
-            proactive, and ready to work independently.
-          </li>
-          <li>
-            You care deeply about creating a great experience for candidates.
-            You have heaps of enthusiasm, diplomacy and patience.
-          </li>
-        </ul>
+        <p className='para'>
+          You’re incredibly well organised. You’re used to taking
+          responsibility for scheduling and logistics and you can prioritise
+          tasks effortlessly.
+        </p>
+        <p className='para'>
+          You are process oriented. You’re obsessively detail-attentive,
+          proactive, and ready to work independently.
+        </p>
+        <p className='para'>
+          You care deeply about creating a great experience for candidates.
+          You have heaps of enthusiasm, diplomacy and patience.
+        </p>
         <p className='para'>
           This role would ideally suit a recent graduate, someone with 0-3 years'
           experience in administrative roles, events planning or similar. We welcome

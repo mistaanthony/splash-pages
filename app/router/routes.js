@@ -33,7 +33,7 @@ import CountryLeadSweden from '../pages/about/jobs/positions/country-lead-se';
 import Designers from '../pages/about/jobs/positions/designers';
 import SoftwareEngineer from '../pages/about/jobs/positions/software-engineer';
 import WebOperationsEngineer from '../pages/about/jobs/positions/web-operations-engineer';
-import HiringAssistant from '../pages/about/jobs/positions/hiring-assistant';
+import HiringCoordinator from '../pages/about/jobs/positions/hiring-coordinator';
 
 import LegalIntroduction from '../pages/legal/introduction/legal-introduction';
 import LegalCustomers from '../pages/legal/customers/legal-customers';
@@ -307,9 +307,9 @@ export const config = Immutable.fromJS([
       },
     },
   ],
-  [HiringAssistant, { name: 'jobs_hiring_assistant', category: 'jobs.operations' }, {
+  [HiringCoordinator, { name: 'jobs_hiring_coordinator', category: 'jobs.operations' }, {
       en: {
-        path: '/about/jobs/hiring-assistant',
+        path: '/about/jobs/hiring-coordinator',
       },
     },
   ],
