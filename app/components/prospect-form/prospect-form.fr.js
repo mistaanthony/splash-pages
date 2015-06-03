@@ -8,7 +8,7 @@ export default class ProspectFormFr extends React.Component {
     return (
       <Translation locales='fr'>
         <label className='label label--stacked' htmlFor='prospect_metadata_number_of_payments'>
-            Combien de paiements voulez-vouz prendre chaque mois?
+            Combien de paiements souhaitez-vous collecter chaque mois?
           </label>
         <select className='select input--stacked' id='prospect_metadata_number_of_payments' name='prospect[metadata][number_of_payments]'>
           <option></option>
