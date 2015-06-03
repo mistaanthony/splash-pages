@@ -7,8 +7,8 @@ describe('Tabs Component', function() {
   beforeEach(function() {
     result = ReactTestUtils.renderIntoDocument(
         <Tabs triggers={[
-          (<a href='#'>1</a>),
-          (<a href='#' className='trigger'><span className='trigger-span'>2</span></a>),
+          (<a href=''>1</a>),
+          (<a href='' className='trigger'><span className='trigger-span'>2</span></a>),
         ]}>
           <div>Content 1</div>
           <div>Content 2</div>

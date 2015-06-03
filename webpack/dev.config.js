@@ -2,7 +2,7 @@ import path from 'path';
 import webpack from 'webpack';
 import writeStats from './utils/write-stats';
 import notifyStats from './utils/notify-stats';
-var autoprefixer = require('autoprefixer-core');
+import autoprefixer from 'autoprefixer-core';
 
 const assetsPath = path.resolve(__dirname, './public/');
 
