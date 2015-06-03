@@ -152,6 +152,11 @@ export default {
     description: '',
     sidebar_text: 'Des questions ?',
   },
+  legal_merchants: {
+    title: 'Légal - Nos Conditions Générales d\'Utilisation (CGU)',
+    nav_title: 'CGU',
+    description: 'Legal',
+  },
   legal_privacy: {
     title: 'Légal - Politique de confidentialité',
     nav_title: 'Politique de confidentialité',
