@@ -2,6 +2,8 @@
 
 export default {
   country: 'Ireland',
+  phone_full: '+353 76 680 5320',
+  phone_local: '076 680 5320',
   hero: {
     header: 'Accept recurring payments across Europe',
     desc: 'GoCardless allows you to collect Direct Debit payments from Ireland, the UK and the Eurozone in a single integration.',
