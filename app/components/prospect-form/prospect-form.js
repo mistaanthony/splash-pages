@@ -7,6 +7,7 @@ import {getMessage} from '../../components/intl/intl';
 import {PropTypes} from '../../helpers/prop-types/prop-types';
 import classNames from 'classnames';
 import {trackEvent} from '../../helpers/gtm-tracker/gtm-tracker';
+import ProspectFormFr from './prospect-form.fr';
 
 const prospectTypes = {
   sales: {
@@ -147,6 +148,8 @@ export default class ProspectForm extends React.Component {
           </label>
           <input className='input input--stacked' id='prospect_phone_number' name='prospect[phone_number]'
             placeholder={getMessage(messages, 'prospect_form.phone_placeholder')} required type='text' />
+
+          <ProspectFormFr />
 
           <button className='btn btn--block u-margin-Tl' type='submit'>
             <Message pointer='prospect_form.submit' />
