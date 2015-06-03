@@ -98,16 +98,16 @@ export default class Stories extends React.Component {
         <div className='site-container u-text-center u-padding-Vxxl'>
           <div className='u-padding-Vxl'>
             <Tabs triggers={[
-              (<a href='#' className={'grid__cell u-padding-Hl stories-testimonials__link--guardian' +
+              (<a href='' className={'grid__cell u-padding-Hl stories-testimonials__link--guardian' +
                  ' u-size-1of3 stories-testimonials__link u-link-clean'}>
                 <img src='/images/stories/guardian-logo@2x.jpg' />
               </a>),
-              (<a href='#'
+              (<a href=''
                  className={'grid__cell u-padding-Hl stories-testimonials__link--funding-circle' +
                  ' u-size-1of3 stories-testimonials__link u-link-clean'}>
                 <img className='stories-testimonials__link-image--funding-circle' src='/images/stories/funding-circle-logo@2x.jpg' />
               </a>),
-              (<a href='#'
+              (<a href=''
                  className={'grid__cell u-padding-Hl stories-testimonials__link--lendable' +
                  ' u-size-1of3 stories-testimonials__link u-link-clean'}>
                 <img className='stories-testimonials__link-image--lendable' src='/images/stories/lendable-logo@2x.jpg' />

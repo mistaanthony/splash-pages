@@ -66,7 +66,7 @@ class Header extends React.Component {
             <nav className='nav u-pull-start u-color-primary u-text-xxs u-text-light u-text-no-smoothing'>
               <div className='nav__item u-relative'>
                 <Popover className='popover--large' toggle={
-                   (<a href='#' id='track-nav-products' className={linkClass}>
+                   (<a href='' id='track-nav-products' className={linkClass}>
                       <div className={classNames('nav__item-link popover-link', {
                         'popover-link--invert': isInverted,
                       })}>
@@ -97,7 +97,7 @@ class Header extends React.Component {
               </div>
               <div className='nav__item u-relative'>
                 <Popover toggle={
-                  (<a href='#' id='track-nav-more' className={linkClass}>
+                  (<a href='' id='track-nav-more' className={linkClass}>
                     <div className={classNames('nav__item-link popover-link', {
                       'popover-link--invert': isInverted,
                     })}>

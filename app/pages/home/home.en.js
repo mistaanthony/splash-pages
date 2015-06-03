@@ -93,7 +93,7 @@ export default class HomeEn extends React.Component {
                 Direct Debit?
               </p>
               <Modal toggle={(
-                <a href='#'>Find out the basics</a>
+                <a href=''>Find out the basics</a>
               )}>
                 <HowDdWorks />
               </Modal>

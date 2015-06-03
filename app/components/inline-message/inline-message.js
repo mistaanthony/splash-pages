@@ -9,7 +9,7 @@ function getMessageFromTranslations(pointer, messages) {
 }
 
 function isSubsetOfLocale(string, locale) {
-  return locale.startsWith(string);
+  return locale.indexOf(string) === 0;
 }
 
 function checkForDuplicateMessage(localeA, localeB, pointer, messages) {
