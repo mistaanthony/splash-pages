@@ -2,6 +2,7 @@ import path from 'path';
 import webpack from 'webpack';
 import writeStats from './utils/write-stats';
 import notifyStats from './utils/notify-stats';
+var autoprefixer = require('autoprefixer-core');
 
 const assetsPath = path.resolve(__dirname, './public/');
 
@@ -26,10 +27,11 @@ export default function(WEBPACK_HOST, WEBPACK_PORT) {
       loaders: [
         { test: /\.(jpe?g|png|gif|svg)$/, loader: 'file-loader' },
         { test: /\.js$/, exclude: /node_modules/, loaders: ['react-hot-loader', 'babel-loader'] },
-        { test: /\.scss$/, loader: 'style-loader!css-loader!sass-loader' },
-        { test: /\.css$/, loader: 'style-loader!css-loader' },
+        { test: /\.scss$/, loader: 'style-loader!css-loader!postcss-loader!sass-loader' },
+        { test: /\.css$/, loader: 'style-loader!css-loader!postcss-loader' },
       ],
     },
+    postcss: [autoprefixer({ browsers: ['last 2 version'] })],
     progress: true,
     plugins: [
       new webpack.HotModuleReplacementPlugin(),

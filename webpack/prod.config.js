@@ -24,8 +24,8 @@ module.exports = {
     loaders: [
       { test: /\.(jpe?g|png|gif|svg)$/, loader: 'file' },
       { test: /\.js$/, exclude: /node_modules/, loaders: [strip.loader('debug'), 'babel'] },
-      { test: /\.scss$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader!sass-loader', 'postcss-loader') },
-      { test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader', 'postcss-loader') },
+      { test: /\.scss$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader!postcss-loader!sass-loader') },
+      { test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader!postcss-loader') },
     ],
   },
   postcss: [autoprefixer({ browsers: ['last 2 version'] })],
