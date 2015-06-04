@@ -1,6 +1,5 @@
 import React from 'react';
 import Translation from '../../../../components/translation/translation';
-import Link from '../../../../components/link/link';
 import Href from '../../../../components/href/href';
 
 export default class FaqMerchantsPartnersEn extends React.Component {
@@ -26,9 +25,185 @@ export default class FaqMerchantsPartnersEn extends React.Component {
           Who are existing partners?
         </h3>
         <p className='para'>
-          GoCardless is integrated into a variety of accounting packages and popular services. View a list of
-          these <Link to='partners' className='u-link-color-p u-text-underline'>here</Link>.
+          GoCardless is integrated into a variety of accounting packages and popular services. Current partners include:
         </p>
+        <ul className='list'>
+          <li>
+            <a href='http://www.angelsden.com/' target='_blank' className='u-link-color-p u-text-underline' rel='nofollow'>
+              Angels Den
+            </a>
+          </li>
+          <li>
+            <a href='http://www.asperato.com/' target='_blank' className='u-link-color-p u-text-underline' rel='nofollow'>
+              Asperato
+            </a>
+          </li>
+          <li>
+            <a href='http://www.bookingsplus.co.uk/' target='_blank' className='u-link-color-p u-text-underline' rel='nofollow'>
+              BookingsPlus
+            </a>
+          </li>
+          <li>
+            <a href='http://www.butterware.co.uk/' target='_blank' className='u-link-color-p u-text-underline' rel='nofollow'>
+              Butterware
+            </a>
+          </li>
+          <li>
+            <a href='http://www.buy-our-honeymoon.com/' target='_blank' className='u-link-color-p u-text-underline' rel='nofollow'>
+              Buy Our Honeymoon
+            </a>
+          </li>
+          <li>
+            <a href='https://www.charitycheckout.co.uk/' target='_blank' className='u-link-color-p u-text-underline' rel='nofollow'>
+              Charity Checkout
+            </a>
+          </li>
+          <li>
+            <a href='https://churchapp.co.uk/' target='_blank' className='u-link-color-p u-text-underline' rel='nofollow'>
+              ChurchApp
+            </a>
+          </li>
+          <li>
+            <a href='https://www.cleanerplanner.com/' target='_blank' className='u-link-color-p u-text-underline' rel='nofollow'>
+              Cleaner Planner
+            </a>
+          </li>
+          <li>
+            <a href='https://www.clearbooks.co.uk/' target='_blank' className='u-link-color-p u-text-underline' rel='nofollow'>
+              Clear Books
+            </a>
+          </li>
+          <li>
+            <a href='http://www.clubmanagercentral.com/uk/' target='_blank' className='u-link-color-p u-text-underline' rel='nofollow'>
+              Club Manager Limited
+            </a>
+          </li>
+          <li>
+            <a href='http://www.clubbuzz.co.uk/' target='_blank' className='u-link-color-p u-text-underline' rel='nofollow'>
+              ClubBuzz
+            </a>
+          </li>
+          <li>
+            <a href='https://www.cobot.me/spaces' target='_blank' className='u-link-color-p u-text-underline' rel='nofollow'>
+              Cobot
+            </a>
+          </li>
+          <li>
+            <a href='https://www.crowdcube.com/' target='_blank' className='u-link-color-p u-text-underline' rel='nofollow'>
+              Crowdcube
+            </a>
+          </li>
+          <li>
+            <a href='http://www.crowdfunder.co.uk/' target='_blank' className='u-link-color-p u-text-underline' rel='nofollow'>
+              Crowdfunder
+            </a>
+          </li>
+          <li>
+            <a href='http://www.directli.co.uk/' target='_blank' className='u-link-color-p u-text-underline' rel='nofollow'>
+              Directli
+            </a>
+          </li>
+          <li>
+            <a href='https://www.ethex.org.uk/' target='_blank' className='u-link-color-p u-text-underline' rel='nofollow'>
+              Ethex
+            </a>
+          </li>
+          <li>
+            <a href='http://www.freeagent.com/' target='_blank' className='u-link-color-p u-text-underline' rel='nofollow'>
+              FreeAgent
+            </a>
+          </li>
+          <li>
+            <a href='http://www.ifacility.co.uk/' target='_blank' className='u-link-color-p u-text-underline' rel='nofollow'>
+              iFacility Software and Design
+            </a>
+          </li>
+          <li>
+            <a href='http://www.kashflow.com/' target='_blank' className='u-link-color-p u-text-underline' rel='nofollow'>
+              KashFlow
+            </a>
+          </li>
+          <li>
+            <a href='https://libacura.co.uk/' target='_blank' className='u-link-color-p u-text-underline' rel='nofollow'>
+              Libacura
+            </a>
+          </li>
+          <li>
+            <a href='http://www.microgenius.org.uk/' target='_blank' className='u-link-color-p u-text-underline' rel='nofollow'>
+              Microgenius
+            </a>
+          </li>
+          <li>
+            <a href='http://www.milkroundsoftware.co.uk/' target='_blank' className='u-link-color-p u-text-underline' rel='nofollow'>
+              Milk Round Software
+            </a>
+          </li>
+          <li>
+            <a href='https://www.onlineguidemanager.co.uk/' target='_blank' className='u-link-color-p u-text-underline' rel='nofollow'>
+              Online Guide Manager
+            </a>
+          </li>
+          <li>
+            <a href='https://www.onlinescoutmanager.co.uk/' target='_blank' className='u-link-color-p u-text-underline' rel='nofollow'>
+              Online Scout Manager
+            </a>
+          </li>
+          <li>
+            <a href='https://paysubsonline.com/' target='_blank' className='u-link-color-p u-text-underline' rel='nofollow'>
+              paysubsonline
+            </a>
+          </li>
+          <li>
+            <a href='http://www.pitchero.com/' target='_blank' className='u-link-color-p u-text-underline' rel='nofollow'>
+              Pitchero
+            </a>
+          </li>
+          <li>
+            <a href='http://www.quickfile.co.uk/' target='_blank' className='u-link-color-p u-text-underline' rel='nofollow'>
+              Quick File
+            </a>
+          </li>
+          <li>
+            <a href='https://www.rentify.com/' target='_blank' className='u-link-color-p u-text-underline' rel='nofollow'>
+              Rentify
+            </a>
+          </li>
+          <li>
+            <a href='http://www.sage.co.uk/' target='_blank' className='u-link-color-p u-text-underline' rel='nofollow'>
+              Sage
+            </a>
+          </li>
+          <li>
+            <a href='https://spacehive.com/' target='_blank' className='u-link-color-p u-text-underline' rel='nofollow'>
+              Spacehive
+            </a>
+          </li>
+          <li>
+            <a href='http://sport80.com/' target='_blank' className='u-link-color-p u-text-underline' rel='nofollow'>
+              Sport:80
+            </a>
+          </li>
+          <li>
+            <a href='http://teamer.net/' target='_blank' className='u-link-color-p u-text-underline' rel='nofollow'>
+              Teamer
+            </a>
+          </li>
+          <li>
+            <a href='https://goteamup.com/en-us/' target='_blank' className='u-link-color-p u-text-underline' rel='nofollow'>
+              teamup
+            </a>
+          </li>
+          <li>
+            <a href='https://webcollect.org.uk/' target='_blank' className='u-link-color-p u-text-underline' rel='nofollow'>
+              WebCollect
+            </a>
+          </li>
+          <li>
+            <a href='https://www.xero.com/uk/' target='_blank' className='u-link-color-p u-text-underline' rel='nofollow'>
+              Xero
+            </a>
+          </li>
+        </ul>
 
         <h3 className='section-heading u-text-heading-light u-color-heading u-margin-Vm u-text-s'>
           Can I take a revenue share?
