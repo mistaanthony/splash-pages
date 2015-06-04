@@ -24,7 +24,6 @@ export default class FaqMerchantsPartnersEn extends React.Component {
         <h3 className='section-heading u-text-heading-light u-color-heading u-margin-Vm u-text-s'>
           Who are existing partners?
         </h3>
-
         <p className='para'>
           GoCardless is integrated into a variety of accounting packages and popular services. Current partners include:
         </p>
