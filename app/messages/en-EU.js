@@ -2,6 +2,9 @@
 
 export default {
   country: 'Europe',
+  country_properties: {
+    local_scheme: 'sepa',
+  },
   hero: {
     header: 'Accept recurring payments across Europe',
     desc: 'GoCardless allows you to collect Direct Debit payments from the UK and the Eurozone in a single integration.',

@@ -2,6 +2,9 @@
 
 export default {
   country: 'United Kingdom',
+  country_properties: {
+    local_scheme: 'bacs',
+  },
   phone_local: '020 7183 8674',
   documentation_link: 'https://developer.gocardless.com/',
   footer: {

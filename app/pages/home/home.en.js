@@ -13,6 +13,8 @@ import ProIcon from '../../icons/svg/pro';
 import ShopIcon from '../../icons/svg/shop';
 import IntegrationsIcon from '../../icons/svg/integrations';
 
+import IfLocalScheme from '../../components/if-local-scheme/if-local-scheme'
+
 export default class HomeEn extends React.Component {
   displayName = 'HomeEn'
 
@@ -56,7 +58,7 @@ export default class HomeEn extends React.Component {
                 </p>
               </div>
 
-              <Translation locales={['en']} exclude={['en-GB']}>
+              <IfLocalScheme name="sepa">
                 <div className='grid__cell u-size-1of3 u-text-center'>
                   <figure className='svg-icon u-center'>
                     <TickSquareIcon className='svg-icon__image svg-icon__image--shadow u-fill-yellow' />
@@ -69,8 +71,8 @@ export default class HomeEn extends React.Component {
                     Accept payments with Bacs Direct Debit and SEPA Direct Debit
                   </p>
                 </div>
-              </Translation>
-              <Translation locales='en-GB'>
+              </IfLocalScheme>
+              <IfLocalScheme name="bacs">
                 <div className='grid__cell u-size-1of3 u-text-center'>
                   <figure className='svg-icon u-center'>
                     <MoneyFlowerIcon className='svg-icon__image svg-icon__image--shadow u-fill-yellow' />
@@ -83,11 +85,11 @@ export default class HomeEn extends React.Component {
                     Less than half the cost of Paypal, with easy-to-understand pricing
                   </p>
                 </div>
-              </Translation>
+              </IfLocalScheme>
 
             </div>
 
-            <Translation locales='en-GB'>
+            <IfLocalScheme name="bacs">
               <p className='u-color-p u-margin-Txxl u-padding-Tm'>
                 Want to learn more about
                 Direct Debit?
@@ -97,7 +99,7 @@ export default class HomeEn extends React.Component {
               )}>
                 <HowDdWorks />
               </Modal>
-            </Translation>
+            </IfLocalScheme>
           </div>
         </div>
         <Translation locales={['en-GB','en-IE']}>

@@ -44,6 +44,10 @@ export function render(req, res, next) {
     memo[locale] = getMessage(localeMessages[locale], 'country');
     return memo;
   }, {});
+  const countryProperties = availableLocales.reduce(function(memo, locale) {
+    memo[locale] = getMessage(localeMessages[locale], 'country_properties');
+    return memo;
+  }, {});
 
   function appProps(props) {
     return assign({
@@ -54,6 +58,7 @@ export function render(req, res, next) {
       config: config,
       availableLocales: availableLocales,
       availableCountryNames: availableCountryNames,
+      countryProperties: countryProperties,
     }, props);
   }
 
