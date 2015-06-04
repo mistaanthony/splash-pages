@@ -1,5 +1,6 @@
 import React from 'react';
 import Translation from '../../components/translation/translation';
+import IfLocalScheme from '../../components/if-local-scheme/if-local-scheme';
 import Message from '../../components/message/message';
 import Link from '../../components/link/link';
 import HowDdWorks from '../../components/how-dd-works/how-dd-works';
@@ -13,7 +14,6 @@ import ProIcon from '../../icons/svg/pro';
 import ShopIcon from '../../icons/svg/shop';
 import IntegrationsIcon from '../../icons/svg/integrations';
 
-import IfLocalScheme from '../../components/if-local-scheme/if-local-scheme'
 
 export default class HomeEn extends React.Component {
   displayName = 'HomeEn'

@@ -1,14 +1,11 @@
 import React from 'react';
-import { homeRoute } from '../../router/routes';
-import { getLocalesForRouteName } from '../../router/route-helpers';
-import Translation from '../translation/translation'
+import Translation from '../translation/translation';
 
 function getLocalesWithLocalScheme(selectedScheme, availableLocales, countryProperties) {
-  const siteLocales = getLocalesForRouteName(homeRoute, availableLocales);
   var localesWithScheme = [];
 
   for (var locale in countryProperties) {
-    if(countryProperties[locale].local_scheme == selectedScheme) {
+    if (countryProperties[locale].local_scheme === selectedScheme) {
       localesWithScheme.push(locale);
     }
   }
@@ -25,13 +22,12 @@ export default class IfLocalScheme extends React.Component {
   }
 
   static contextTypes = {
-    config: React.PropTypes.object.isRequired,
     availableLocales: React.PropTypes.array.isRequired,
     countryProperties: React.PropTypes.object.isRequired,
   }
 
   render() {
-    const { config, availableLocales, countryProperties } = this.context;
+    const { availableLocales, countryProperties } = this.context;
     const localesWithScheme = getLocalesWithLocalScheme(this.props.name, availableLocales, countryProperties);
 
     return (
