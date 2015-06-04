@@ -10,7 +10,7 @@ export default class FaqMerchantsDeveloperApiEn extends React.Component {
     return (
       <Translation locales='en'>
         <h2 className='u-text-heading-light u-text-m u-color-heading'>Developer API</h2>
-        
+
         <h3 className='section-heading u-text-heading-light u-color-heading u-margin-Vm u-text-s'>
           What can I use the API for?
         </h3>
@@ -44,8 +44,10 @@ export default class FaqMerchantsDeveloperApiEn extends React.Component {
             requests on their behalf.
           </p>
           <p className='para'>
-            For further information, see the <Link to='faq_merchants_partners' className='u-link-color-p u-text-underline'>partner FAQ</Link> or our <a href='https://developer.gocardless.com/#partner-guide'
-          className='u-link-color-p u-text-underline'>partner API guide</a>.
+            For further information, see the <Link to='faq_merchants_partners'
+            className='u-link-color-p u-text-underline'>partner FAQ</Link> or
+            our <a href='https://developer.gocardless.com/#partner-guide'
+            className='u-link-color-p u-text-underline'>partner API guide</a>.
           </p>
         </Translation>
         <Translation locales='en-IE'>
@@ -53,18 +55,19 @@ export default class FaqMerchantsDeveloperApiEn extends React.Component {
             How does the Partner API work?
           </h3>
           <p className='para'>
-            A Partner integration allows your customers to quickly and easily create a GoCardless account and start collecting 
-            payments without copying and pasting API keys.
+            A Partner integration allows your customers to quickly and easily create a GoCardless account
+            and start collecting payments without copying and pasting API keys.
           </p>
           <p className='para'>
-            To learn more about our Partner product, please <Link to='contact_sales' className='u-link-color-p u-text-underline'>contact us</Link>.
+            To learn more about our Partner product,
+            please <Link to='contact_sales' className='u-link-color-p u-text-underline'>contact us</Link>.
           </p>
         </Translation>
 
         <h3 className='section-heading u-text-heading-light u-color-heading u-margin-Vm u-text-s'>
           What programming languages can I use?
         </h3>
-        
+
         <Translation locales='en-GB'>
           <p className='para'>
             We have client libraries
@@ -110,10 +113,12 @@ export default class FaqMerchantsDeveloperApiEn extends React.Component {
         </h3>
         <Translation locales='en-GB'>
           <p className='para'>
-            Yes, but only with GoCardless Pro. With Pro, you're able to design your own payment pages and you can host them directly on your website.
+            Yes, but only with GoCardless Pro. With Pro, you're able to design your own payment pages
+            and you can host them directly on your website.
           </p>
           <p className='para'>
-            On the standard GoCardless product, we host the payment pages securely on our website in order to comply with the Direct Debit scheme rules.
+            On the standard GoCardless product, we host the payment pages securely on our website
+            in order to comply with the Direct Debit scheme rules.
           </p>
           <p className='para'>
             You can redirect the customer to our payment page and we will redirect them back to your site. Alternatively,
@@ -122,9 +127,10 @@ export default class FaqMerchantsDeveloperApiEn extends React.Component {
         </Translation>
         <Translation locales={['en']} exclude={['en-GB']}>
           <p className='para'>
-            Yes, but only with GoCardless Pro. With Pro, you're able to design your own payment pages and you can host them directly on your website.
-            There are certain rules you'll need to comply with, but we'll help you to implement them with our
-            SEPA and Bacs implementation guides.
+            Yes, but only with GoCardless Pro. With Pro, you're able to design your own payment pages
+            and you can host them directly on your website.
+            There are certain rules you'll need to comply with, but we'll help you to implement them with
+            our SEPA and Bacs implementation guides.
           </p>
         </Translation>
 
@@ -174,7 +180,8 @@ export default class FaqMerchantsDeveloperApiEn extends React.Component {
         </Translation>
         <Translation locales={['en']} exclude={['en-GB']}>
           <p className='para'>
-            You can find out more about available webhooks and how to use them in our <a href='https://developer.gocardless.com/pro#webhooks-overview'
+            You can find out more about available webhooks and how to use them in
+            our <a href='https://developer.gocardless.com/pro#webhooks-overview'
             className='u-link-color-p u-text-underline'>webhook guide</a>.
           </p>
         </Translation>
